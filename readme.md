@@ -14,7 +14,13 @@ Project ini dibangun menggunakan:
 
 ---
 
-## Arsitektur
+## 📸 Screenshot UI
+
+![alt text](image.png)
+
+---
+
+## 🏗️ Arsitektur Sistem
 
 ![alt text](<Arsitektur Goodeva.drawio.png>)
 
