@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.utils.jwt_helper import generate_token
+from flask_jwt_extended import create_access_token
 
 def login_user(data):
     username = data.get("username")
@@ -7,7 +7,7 @@ def login_user(data):
 
     # dummy user
     if username == "admin" and password == "admin":
-        token = generate_token(username)
+        token = create_access_token(identity=username)
         return jsonify({"token": token})
 
     return jsonify({"error": "Invalid credentials"}), 401
