@@ -41,12 +41,6 @@ Project ini dibangun menggunakan:
 - Output:
   - Status produk (misalnya: Laris / Tidak Laris)
 
-### 🛡️ Security
-
-- JWT Token Authentication
-- Protected Route di React
-- Authorization Header otomatis dengan Axios Interceptor
-
 ---
 
 ## ⚙️ Teknologi yang Digunakan
@@ -68,4 +62,29 @@ Project ini dibangun menggunakan:
 
 ---
 
-## 📁 Struktur Project
+## 🔧 Cara Menjalankan Project
+
+Project ini terdiri dari 2 bagian:
+
+- Backend (Flask)
+- Frontend (React)
+
+---
+
+### 1️⃣ Menjalankan Backend (Flask)
+
+Masuk ke folder backend:
+
+1. cd backend
+2. pip install -r requirements.txt
+3. python app.py
+4. Backend akan berjalan di http://127.0.0.1:5000
+
+### 1️⃣ Menjalankan Frontend(React)
+
+Masuk ke folder backend:
+
+1. cd frontend
+2. npm install
+3. npm run dev
+4. Frontend akan berjalan di http://localhost:5173 (Port ini yang dibuka di browser)
