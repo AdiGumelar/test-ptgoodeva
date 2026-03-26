@@ -75,8 +75,6 @@ Aplikasi dibangun menggunakan arsitektur terpisah antara frontend dan backend:
 - React digunakan untuk membangun antarmuka pengguna yang interaktif
 - Flask digunakan sebagai REST API untuk mengelola data dan proses machine learning
 
----
-
 #### 2. Penggunaan JWT untuk Authentication
 
 Autentikasi menggunakan JSON Web Token (JWT):
@@ -85,16 +83,12 @@ Autentikasi menggunakan JSON Web Token (JWT):
 - Disimpan di `localStorage` di sisi frontend
 - Dikirim melalui header `Authorization` untuk setiap request
 
----
-
 #### 3. Axios Interceptor
 
 Menggunakan Axios interceptor untuk:
 
 - Menambahkan token secara otomatis ke setiap request API
 - Menghindari duplikasi kode
-
----
 
 #### 4. Protected Route di React
 
@@ -103,8 +97,6 @@ Halaman seperti dashboard dilindungi menggunakan mekanisme Protected Route:
 - User tanpa token tidak dapat mengakses halaman tersebut
 - Redirect otomatis ke halaman login
 
----
-
 #### 5. Machine Learning Integration
 
 Model machine learning (LogisticRegression):
@@ -112,8 +104,6 @@ Model machine learning (LogisticRegression):
 - Digunakan untuk memprediksi status produk
 - Model disimpan dalam file `.pkl` menggunakan `joblib`
 - Backend bertanggung jawab melakukan inference
-
----
 
 #### 6. UI dengan Bootstrap
 
@@ -135,13 +125,9 @@ Diasumsikan bahwa:
 - Input dari user berupa angka valid (tidak kosong / tidak invalid)
 - Validasi dasar dilakukan di frontend
 
----
-
 #### 2. Single User Role
 
 Sistem hanya memiliki satu jenis user (tidak ada role admin/user terpisah)
-
----
 
 #### 3. Model Sudah Terlatih
 
@@ -150,8 +136,6 @@ Model machine learning:
 - Sudah dilatih sebelumnya
 - Tidak dilakukan training ulang di dalam aplikasi
 
----
-
 #### 4. Penyimpanan Data Sederhana
 
 Data penjualan:
@@ -159,15 +143,11 @@ Data penjualan:
 - Disimpan secara statis / sederhana (tidak menggunakan database kompleks)
 - Fokus pada demonstrasi fitur, bukan production
 
----
-
 #### 5. Token Expiration
 
 Token memiliki masa berlaku (expired):
 
 - Jika token expired, user harus login ulang
-
----
 
 #### 6. Lingkungan Lokal (Development)
 
