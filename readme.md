@@ -76,9 +76,10 @@ Alur sistem dimulai dari user → frontend → backend → model machine learnin
 
 - Flask
 - Flask-CORS
-- PyJWT
+- flask-jwt-extended
 - Scikit-learn
 - Joblib
+- pandas
 
 ---
 
