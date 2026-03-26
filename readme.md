@@ -14,6 +14,20 @@ Project ini dibangun menggunakan:
 
 ---
 
+## Arsitektur
+
+![alt text](<Arsitektur Goodeva.drawio.png>)
+
+Sistem ini menggunakan arsitektur berlapis yang terdiri dari frontend, backend API, machine learning, dan data source. React digunakan sebagai frontend untuk menangani interaksi user dan mengirim request ke backend melalui HTTP.
+
+Backend Flask berfungsi sebagai API yang menerima request, memproses data, serta menghubungkan dengan model machine learning. Model yang digunakan adalah Logistic Regression yang telah dilatih sebelumnya.
+
+Model mengambil referensi dari data yang berasal dari file CSV saat proses training. Ketika user melakukan prediksi, data input akan dikirim ke backend, diproses oleh model, lalu hasilnya dikembalikan ke frontend dalam bentuk response.
+
+Alur sistem dimulai dari user → frontend → backend → model machine learning → hasil dikirim kembali ke frontend.
+
+---
+
 ## 🧠 Fitur Utama
 
 ### 🔐 Authentication
